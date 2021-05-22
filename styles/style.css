@@ -15,14 +15,15 @@ body{
 
 #hero-image {
     overflow:hidden;
-    width: auto ;
-  max-width: 100% ;
-  height: auto ;
+    
 }
 
 #image {    
  display: flex;
  justify-content: center;  
+ width: auto ;
+  max-width: 100% ;
+  height: auto ;
  }  
 
 
