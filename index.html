@@ -1,1 +1,122 @@
-Hello World
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>Apple Survey</title>
+</head>
+
+<body>
+    <div id="container">
+        	<div id="hero-image">
+        		<a href="https://www.apple.com/">
+			<img src="images/header.jpg" width="1440px"alt="apple header">
+			</a>
+		</div>
+		
+        
+          
+            <form id="questionnaire">
+                <div id=content>
+                    <h2><a
+                            href="https://www.apple.com/">Apple's</a> Customer Satisfaction Survey</h2>
+                    <h3>WE’D LIKE TO HEAR FROM YOU!</h3>
+                    
+                </div>
+                <div id=image> 
+                    <a href="https://www.apple.com/"> <img src="images/apple.png" width="1440px"  alt="apple" />
+                    </a>
+                </div>
+
+                <!-- Details -->
+                <p>We'd love to hear from you about the challenges you faced with our website. This will help us make improvements to the existing interface and prioritize new features. </p>
+                <h4>We really appreciate your input! <h4>
+                
+                <div class="form-control">
+                    <label for="role" id="label-role">
+                        1. Is the organisation of information on the screen?
+                    </label>
+
+                    <select name="role" id="role">
+                        <option value="select">Select answer</option>
+                        <option value="yes">Very clear</option>
+
+                        <option value="Okay">
+                            Good
+                        </option>
+                        <option value="No">Very confusing</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <label>2. Which of the following description apply to our interface ?
+                        <small>(Check all that apply)</small>
+                    </label>
+                    <!-- Input Type Checkbox -->
+                    <label for="inp-1">
+                        <input type="checkbox" name="inp"> Easy to navigate</input></label>
+                    <label for="inp-2">
+                        <input type="checkbox" name="inp"> Good selection of colors</input></label>
+                    <label for="inp-3">
+                        <input type="checkbox" name="inp"> Easy accessibility for help</input></label>
+                    <label for="inp-4">
+                        <input type="checkbox" name="inp"> Ease to use</input></label>
+                    <label for="inp-5">
+                        <input type="checkbox" name="inp"> Good website layout</input></label>
+                </div>
+
+                <div class="form-control">
+                    <label for="name" id="label-name">
+                        3. .......
+                    </label>
+
+                    <!-- Input Type Text -->
+                    <input type="text" id="name" placeholder="Which color should be changed ..." />
+                </div>
+
+                <div class="form-control">
+                    <label>
+                        4. Did you encounter any bugs or did our website crash during your session?
+                    </label>
+
+                    <!-- Input Type Radio Button -->
+                    <label for="recommed-1">
+                        <input type="radio" id="recommed-1" name="recommed"> Yes</input>
+                    </label>
+                    
+                    <label for="recommed-2">
+                        <input type="radio" id="recommed-3" name="recommed"> No</input>
+                    </label>
+                    <label for="name" id="label-name">
+                        If yes, can you explain the bug to help us diagnoze it. 
+                    </label>
+
+                    <!-- Input Type Text -->
+                    <input type="text" id="name" placeholder="You may also include screenshots..." />
+                </div>
+                
+
+                
+
+                
+
+                <div class="form-control">
+                    <label for="comment">
+                        5. Your opinion is valuable to us. Are there are suggestions that can help us improve the user interface for our customers? What can we improve for your next visit? 
+                    </label>
+
+                    <!-- multi-line text input control -->
+                    <textarea name="comment" id="comment" placeholder= "Leave us a feedback..." cols="10"></textarea>
+                </div>
+
+                <!-- Multi-line Text Input Control -->
+                <button type="submit" value="submit">Submit</button>
+
+            </form>
+        <div id="footer" >
+            Survey Designed by Mary Mousa inc.
+        </div>
+    </div>
+</body>
+
+</html>

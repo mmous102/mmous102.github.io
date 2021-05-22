@@ -1,0 +1,103 @@
+body{
+    background-color: #fff ;
+    text-align: center;
+    margin-bottom: 0px;
+    max-width: 100%;
+    overflow-x: hidden
+}
+
+#content{
+    
+    font-size: 100%;
+    color: rgb(46, 44, 44);
+    font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+#hero-image {
+    overflow:hidden;
+}
+
+#image {    
+ display: flex;
+ justify-content: center;  
+ }  
+
+
+form{
+    background-color:white;
+    width: 900px;
+    font-size: large; 
+    font-family:"Helvetica Neue","Helvetica","Arial", sans-serif;
+    display: inline-block;  
+    
+}
+
+.form-control {
+    text-align: left;
+    padding: 10px 10px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+   
+}
+
+
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica,Verdana,sans-serif;
+    
+}
+
+
+.form-control input,
+.form-control select,
+.form-control textarea {
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 20px;
+    display: block;
+    width: 95%;
+    border-color: #808080;
+    font-size: 15px;
+}
+
+
+.form-control input[type="radio"]{
+    display: inline-block;
+    width: auto;
+    margin-left: 20px;
+}
+.form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-left: 20px;
+}
+
+button {
+    background-color: #008CBA;
+    border: 1px solid;
+    font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 25px;
+    color: white;
+    display:block;
+    width: 40%;
+    padding: 10px 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+a{
+    
+}
+#footer{
+  left: 0;
+  position: absolute;
+  bottom: -1200;
+  width: 100%;
+  padding: 10px 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
