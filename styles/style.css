@@ -28,6 +28,7 @@ form{
     width: 900px;
     font-size: large; 
     font-family:"Helvetica Neue","Helvetica","Arial", sans-serif;
+    color: #536878;
     display: inline-block;  
     
 }
@@ -94,10 +95,10 @@ a{
 #footer{
   left: 0;
   position: absolute;
-  bottom: -1200;
+  bottom: -1220;
   width: 100%;
   padding: 10px 10px;
-  background-color: black;
+  background-color: #36454f;
   color: white;
   text-align: center;
 }
