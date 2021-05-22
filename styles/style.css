@@ -37,8 +37,6 @@ form{
 }
 
 .form-control {
-    text-align: left;
-    padding: 10px 10px;
     margin-top: 25px;
     margin-bottom: 15px;
    
@@ -56,13 +54,14 @@ form{
 .form-control input,
 .form-control select,
 .form-control  {
-    border: 3px solid;
+    text-align: left;
+    border: solid;
     border-radius: 10px;
     padding: 20px;
     display: block;
     width: 95%;
     border-color: #808080;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 
