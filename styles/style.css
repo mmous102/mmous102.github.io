@@ -20,10 +20,8 @@ body{
 
 #image {    
  display: flex;
- justify-content: center;  
- width: auto ;
-  max-width: 100% ;
-  height: auto ;
+ justify-content: center; 
+  max-width: 100%;
  }  
 
 
@@ -37,14 +35,14 @@ form{
     
 }
 
-.form-control {
+.form{
     margin-top: 25px;
     margin-bottom: 15px;
    
 }
 
 
-.form-control label {
+.form label {
     display: block;
     margin-bottom: 10px;
     
@@ -52,9 +50,9 @@ form{
 }
 
 
-.form-control input,
-.form-control select,
-.form-control  {
+.form input,
+.form select,
+.form  {
     text-align: left;
     border: solid;
     border-radius: 10px;
@@ -66,12 +64,12 @@ form{
 }
 
 
-.form-control input[type="radio"]{
+.form input[type="radio"]{
     display: inline-block;
     width: auto;
     margin-left: 20px;
 }
-.form-control input[type="checkbox"] {
+.form input[type="checkbox"] {
     display: inline-block;
     width: auto;
     margin-left: 20px;
