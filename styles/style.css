@@ -15,6 +15,9 @@ body{
 
 #hero-image {
     overflow:hidden;
+    width: auto ;
+  max-width: 100% ;
+  height: auto ;
 }
 
 #image {    
@@ -52,7 +55,7 @@ form{
 
 .form-control input,
 .form-control select,
-.form-control textarea {
+.form-control  {
     border: 3px solid;
     border-radius: 10px;
     padding: 20px;
