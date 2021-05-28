@@ -18,7 +18,7 @@ html, body {
 input[type='checkbox'] {
     
     width:30px;
-    height:30px;
+    height:20px;
     background:white;
     border-radius:3px;
     border:2px solid #555;
@@ -41,7 +41,6 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   width: 110%;
   font-family: 'arial';
 }
@@ -55,7 +54,7 @@ body {
   padding: 14px 16px;
   transition: 0.3s;
   color: white;
-    background-color: inherit;
+  background-color: inherit;
 
 }
 
@@ -79,8 +78,6 @@ body {
   padding-left: 50px;
   font-size: 20px;
   text-align: left;
-  align-content: center;
-  justify-content: center;
   display: none;
   border: 1px solid #000000;
   border-radius: 5px;
@@ -90,7 +87,10 @@ body {
   text-align: center;
   font-size: 30px;
 }
-
+.tabcontent h4{
+  text-align: left;
+  font-size: 30px;
+}
 p{
   text-align: center;
 }

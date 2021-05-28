@@ -18,6 +18,27 @@ var products = [
 		price: 2.35
 	},
 	{
+		name: "Tomato",
+		LactoseFree: true,
+		NutFree: true,
+		isOrganic:true,
+		price: 3.90
+	},
+	{
+		name: "Organic Cheese",
+		LactoseFree: false,
+		NutFree: true,
+		isOrganic:true,
+		price: 3.49
+	},
+	{
+		name: "Cheese",
+		LactoseFree: false,
+		NutFree: true,
+		isOrganic:false,
+		price: 2.47
+	},
+	{
 		name: "Salmon",
 		LactoseFree: true,
 		NutFree: true,
@@ -72,8 +93,14 @@ var products = [
 		NutFree: true,
 		isOrganic:true,
 		price: 2.30
-	}
-	
+	},
+	{
+		name: "Banana",
+		LactoseFree: true,
+		NutFree: true,
+		isOrganic:true,
+		price: 1.23
+	},
 ];
 	
 
