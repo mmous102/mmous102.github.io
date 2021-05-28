@@ -49,7 +49,7 @@ function selectedItems(){
 	c.innerHTML = "";
 	
 	var para = document.createElement("P");
-	para.innerHTML = "You selected : ";
+	para.innerHTML = "You have selected:";
 	para.appendChild(document.createElement("br"));
 	for (i = 0; i < ele.length; i++) { 
 		if (ele[i].checked) {
