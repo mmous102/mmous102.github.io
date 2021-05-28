@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+  <div id="header">
+    <h1>Goodness To Go</h1>
+  </div>
+
+  <div class="tab" >
+    <button class="tablinks" onclick="openInfo(event, 'Welcome')">Welcome</button>
+    <button class="tablinks" onclick="openInfo(event, 'Client')">Personal Info</button>
+    <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+    <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+  </div>
+
+
+
+  <div id="Welcome" class="tabcontent">
+    <p > Our products are divided in 3 categories, allowing you to shop either for your Nut-Free, Organic or Lactose-Free needs. You can simply select which category you would fit in and the respective products will show up. Enjoy your shopping experience with us !
+    </p>
+  </div>
+
+  <div id="Client" class="tabcontent">
+    <h3>Client Information</h3>
+    <p>Tell us a bit about your needs</p>
+	   Choose your dietary preferences:
+     <br/>
+         <br/>
+    <input type="checkbox" id="lactose-free" name="lactose-free" value="Lactose-Free" onchange="populateListProductChoices(this.id)">
+    <label for="lactose-free">Lactose-Free</label><br>
+    <input type="checkbox" id="nut-free" name="nut-free" value="Nut-Free" onchange="populateListProductChoices(this.id)">
+    <label for="nut-free">Nut-Free</label><br>
+    <input type="checkbox" id="organic" name="organic" value="Organic" onchange="populateListProductChoices(this.id)">
+    <label for="organic">Organic</label><br>
+    <br>
+  </div>
+
+  <div id="Products" class="tabcontent">
+     <h3>Your targeted products</h3>
+      <p>We preselected products based on your restrictions</p>
+	      Choose items to buy:<br/>
+         <br/>
+	<div id="displayProduct"></div>
+   <br/>
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+		Add selected items to cart
+	</button>
+</div>
+
+<div id="Cart" class="tabcontent">
+  <h3>Cart</h3>
+  <h4>Here is your cart.</h4>
+  <div id="displayCart"></div>
+</div>
+
+
+  <div id=image" style="text-align: left"><img src="images/background.png" width="1440" height="700" /></div>
+
+<div id=footer" style="text-align: center">
+  Website Designed by Mary Mousa
+</div>
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+</html>

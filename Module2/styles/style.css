@@ -1,0 +1,105 @@
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background:   #FFFAFA;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid;
+  background-color: #656565;
+  display: block;
+  width: 100;
+  color: white;
+}
+
+input[type='checkbox'] {
+    
+    width:30px;
+    height:30px;
+   
+}
+#header{
+  text-align: center;
+  font-size: x-large;
+  font-family: "Univers","Helvetica","Arial",sans-serif;
+  color: #656565
+}
+#hero-image {
+    overflow:hidden;
+    text-align: left;
+    
+}
+body {
+  min-height: 100%;
+  display: block;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 110%;
+  font-family: 'arial';
+}
+
+.tab button {
+  font-size: large;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: white;
+    background-color: inherit;
+
+}
+
+.tab button:hover {
+  background-color: #a9a9a9;
+}
+
+.tab button.active {
+  background-color: #000000;
+}
+
+.tabcontent {
+  background:#f1f1f1;
+  margin-left: 50px;
+  width:1000;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  padding-bottom: 50px;
+  padding: 30px;
+  padding-left: 50px;
+  font-size: 20px;
+  text-align: left;
+  align-content: center;
+  justify-content: center;
+  display: none;
+  border: 1px solid #000000;
+  border-radius: 5px;
+
+}
+.tabcontent h3{
+  text-align: center;
+  font-size: 30px;
+}
+
+p{
+  text-align: center;
+}
+.tabcontent button{
+  font-size: large;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #000000;
+  color: white;
+  margin-bottom: 20px;
+}
+.footer{
+}
+
+}
