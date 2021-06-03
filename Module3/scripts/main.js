@@ -78,41 +78,36 @@ function renderProductList(optionArray){
 		var label = document.createElement('label');
 		label.className = "option_item";
 
-	  var productName = sortedOptionArray[i].name;
-	  var productPrice = sortedOptionArray[i].price;
+	    var productName = sortedOptionArray[i].name;
+	    var productPrice = sortedOptionArray[i].price;
 		var productPicture = sortedOptionArray[i].picture;
 
-	  var checkbox = document.createElement("input");
-	  checkbox.type = "checkbox";
+	    var checkbox = document.createElement("input");
+	    checkbox.type = "checkbox";
 		checkbox.className = "checkbox";
-	  checkbox.name = "product";
-	  checkbox.value = productName;
+	    checkbox.name = "product";
+	    checkbox.value = productName;
 
 		label.appendChild(checkbox);
 		formattedPrice = (Math.round(productPrice * 100) / 100).toFixed(2);
 
-		var optioninner = document.createElement("div");
-		optioninner.className = "option_inner nutfree";
-		var tick = document.createElement("div");
-		tick.className = "tickmark";
-		var icon = document.createElement("div");
-		icon.className = "icon";
+		var options = document.createElement("div");
+		options.className = "option_inner nutfree";
+		var image = document.createElement("div");
+		image.className = "image";
 		var productImage = document.createElement("img");
 		productImage.src = productPicture;
 		productImage.alt = "";
-		icon.appendChild(productImage);
+		image.appendChild(productImage);
 		var prodtext = document.createElement("div");
 		prodtext.className = "text";
 		var h2 = document.createElement("h2");
 		h2.appendChild(document.createTextNode(`${productName} - $${formattedPrice}`));
 		prodtext.appendChild(h2);
-		optioninner.appendChild(tick);
-		optioninner.appendChild(icon);
-		optioninner.appendChild(prodtext);
+		options.appendChild(image);
+		options.appendChild(prodtext);
 
-		label.appendChild(optioninner);
+		label.appendChild(options);
 	  s2.appendChild(label);
-
-	  s2.appendChild(document.createElement("br"));
 	}
   }

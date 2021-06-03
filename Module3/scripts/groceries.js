@@ -9,7 +9,7 @@ var products = [
 		LactoseFree: true,
 		NutFree: true,
 		isOrganic:true,
-		price: 1.99
+		price: 2.00
 	},
 	{
 		name: "Bread",
@@ -17,7 +17,7 @@ var products = [
 		LactoseFree: false,
 		NutFree: false,
 		isOrganic:true,
-		price: 2.35
+		price: 2.50
 	},
 	{
 		name: "Tomato",
@@ -25,7 +25,7 @@ var products = [
 		LactoseFree: true,
 		NutFree: true,
 		isOrganic:true,
-		price: 3.90
+		price: 4.00
 	},
 	{
 		name: "Organic Cheese",
@@ -33,7 +33,7 @@ var products = [
 		LactoseFree: false,
 		NutFree: true,
 		isOrganic:true,
-		price: 3.49
+		price: 3.50
 	},
 	{
 		name: "Cheese",
@@ -41,7 +41,7 @@ var products = [
 		LactoseFree: false,
 		NutFree: true,
 		isOrganic:false,
-		price: 2.47
+		price: 2.50
 	},
 	{
 		name: "Salmon",
@@ -57,7 +57,7 @@ var products = [
 		LactoseFree: true,
 		NutFree: true,
 		isOrganic:false,
-		price: 1.79
+		price: 1.50
 	},
 	{
 		name: "Milk",
@@ -89,7 +89,7 @@ var products = [
 		LactoseFree: true,
 		NutFree: false,
 		isOrganic:false,
-		price: 5.99
+		price: 6.00
 	},
 	{
 		name: "Avacado",
@@ -97,7 +97,7 @@ var products = [
 		LactoseFree: true,
 		NutFree: true,
 		isOrganic:false,
-		price: 3.99
+		price: 4.00
 	},
 	{
 		name: "Strawberry",
@@ -106,7 +106,7 @@ var products = [
 		LactoseFree: true,
 		NutFree: true,
 		isOrganic:true,
-		price: 2.30
+		price: 2.00
 	},
 	{
 		name: "Banana",
@@ -114,7 +114,7 @@ var products = [
 		LactoseFree: true,
 		NutFree: true,
 		isOrganic:true,
-		price: 1.23
+		price: 1.50
 	},
 ];
 	
