@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 
@@ -230,12 +229,13 @@ body{
 .tabcontent button:hover {
   background-color: #808080;
 }
-
-footer {
-  background: #0b312c;
+#footer{
+  left: 0;
+  position: relative;
+  bottom: -1220;
+  width: 101%;
+  padding: 10px 10px;
+  background-color: #808080;
   color: white;
-  padding: 1em;
-  margin-top: auto;
-  text-align: right;
-  box-shadow: 0 -5px 10px rgba(0,0,0,0.9);
+  text-align: center;
 }
