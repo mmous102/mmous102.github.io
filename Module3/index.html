@@ -15,6 +15,7 @@
   </div>
 
   <div class="tab" >
+    <button class="tablinks" onclick="openInfo(event, 'welcome')">Welcome</button>
     <button class="tablinks" onclick="openInfo(event, 'Client')">Personal Info</button>
     <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
     <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
@@ -22,7 +23,7 @@
 
 
 <div class="wrapper">
-  <div id="homepage" class="tabcontent">
+  <div id="welcome" class="tabcontent">
     <div id="info" class="introduction">
       <p><center>Our products are divided in 3 categories, allowing you to shop either for your Nut-Free, Organic or Lactose-Free needs. You can simply select which category you would fit in and the respective products will show up. Enjoy your shopping experience with us ! </center></p>
     </div>
@@ -75,9 +76,8 @@
   </div>
 
   <div id="Cart" class="tabcontent">
-    <div id="checkout" class="introduction">
-      <h3>Cart </h3> <br> </br> 
-      <p>Here is your cart.</p>
+    <div class="introduction">
+      <h3>Here is your cart</h3>  
       <div id="displayCart"></div>
     </div>
     <br>
