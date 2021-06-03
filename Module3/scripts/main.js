@@ -102,7 +102,7 @@ function renderProductList(optionArray){
 		productImage.alt = "";
 		icon.appendChild(productImage);
 		var prodtext = document.createElement("div");
-		prodtext.className = "boxtext";
+		prodtext.className = "text";
 		var h2 = document.createElement("h2");
 		h2.appendChild(document.createTextNode(`${productName} - $${formattedPrice}`));
 		prodtext.appendChild(h2);
