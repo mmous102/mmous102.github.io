@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+  <title>Goodness To Go</title>
+</head>
+
+<body>
+
+
+  <div id="header">
+    <h1>Goodness To Go</h1>
+  </div>
+
+  <div class="tab" >
+    <button class="tablinks" onclick="openInfo(event, 'Client')">Personal Info</button>
+    <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+    <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+  </div>
+
+
+<div class="wrapper">
+  <div id="homepage" class="tabcontent">
+    <div id="info" class="introduction">
+      <p><center>Our products are divided in 3 categories, allowing you to shop either for your Nut-Free, Organic or Lactose-Free needs. You can simply select which category you would fit in and the respective products will show up. Enjoy your shopping experience with us ! </center></p>
+    </div>
+  </div>
+<div id="Client" class="tabcontent">
+    <div id="info" class="introduction">
+      <h3>Client Information</h3><br>
+      <b>Tell us a bit about your dietary needs:</b> 
+    </div>
+    <label class="option_item">
+      <input type="checkbox" class="checkbox" id="lactose-free" name="lactose-free" value="Lactose-Free" onchange="populateListProductChoices(this.id)">
+      <div class="option_inner lactosefree">
+        <div class="tickmark"></div>
+        <div class="icon"><img src="images/lactosefree.jpeg" alt=""></div>
+        <div class="boxtext">
+          <h2>Lactose-Free</h2>
+        </div>
+      </div>
+    </label>
+    <label class="option_item">
+      <input type="checkbox" class="checkbox" id="nut-free" name="nut-free" value="Nut-Free" onchange="populateListProductChoices(this.id)">
+      <div class="option_inner nutfree">
+        <div class="tickmark"></div>
+        <div class="icon"><img src="images/nutfree.jpeg" alt=""></div>
+        <div class="boxtext">
+          <h2>Nut-Free</h2>
+        </div>
+      </div>
+    </label>
+    <label class="option_item">
+      <input type="checkbox" class="checkbox" id="organic" name="organic" value="Organic" onchange="populateListProductChoices(this.id)">
+      <div class="option_inner organic">
+        <div class="tickmark"></div>
+        <div class="icon"><img src="images/organic.jpeg" alt=""></div>
+        <div class="boxtext">
+          <h2>Organic</h2>
+        </div>
+      </div>
+    </label>
+  </div>
+
+  <div id="Products" class="tabcontent">
+    <div id="prod" class="introduction">
+      <h3>We preselected products based on your restrictions</h3><br>
+        Choose items to buy:
+    </div>
+  <div id="displayProduct" class="displayProd"></div>
+   <br/>
+   <button id="addCart" type="button" class="block" onclick="selectedItems()">
+    <b>Add selected items to cart</b>
+  </button>
+  </div>
+
+  <div id="Cart" class="tabcontent">
+    <div id="checkout" class="introduction">
+      <h3>Cart </h3> <br> </br> 
+      <p>Here is your cart.</p>
+      <div id="displayCart"></div>
+    </div>
+    <br>
+  </div>
+</div>
+<div id=image" style="text-align: left"><img src="images/background.png" width="1440" height="700" /></div>
+
+<div id=footer" style="text-align: center">
+  Website Designed by Mary Mousa
+</div>
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
