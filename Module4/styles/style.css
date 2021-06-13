@@ -7,6 +7,7 @@
     font-family: 'Gilroy';
     color: #222222;
     font-size: x-large;
+    background-color: #F5F5F5 ;
   }
   
   h1.a {
@@ -14,10 +15,6 @@
     font-size: x-large;
   }
 
-  img.resize{
-    max-width: 20%;
-    max-height: 10%;
-  }
    img.size{
     height: 30;
     width: 30;
@@ -25,7 +22,16 @@
   .light {
     color: white;
   }
-  
+  .image{
+    max-width: 20%;
+  }
+  nav{
+  background-color: #d3d3d3;
+  position: absolute; 
+  top: 0.5; 
+  width: 100%; 
+  height: 14%;
+}
   .hero {
     position: relative;
     width: 100%;
