@@ -32,7 +32,6 @@ body{
 
 .tab button {
   font-size: large;
-  float: left;
   border: none;
   outline: none;
   cursor: pointer;
