@@ -7,7 +7,7 @@
     font-family: 'Gilroy';
     color: #222222;
     font-size: x-large;
-    background-color: #F5F5F5 ;
+    background-color: white ;
   }
   
   h1.a {
@@ -62,8 +62,8 @@
   bottom: -1220;
   width: 100%;
   padding: 10px 10px;
-  background-color: gray;
-  color: white;
+  background-color: #d3d3d3;
+  color: black;
   text-align: center;
 }
   
