@@ -13,14 +13,7 @@
     font-weight: 700;
     font-size: x-large;
   }
-nav
-{
-  background-color: #333;
-  position: absolute; 
-  top: 0.5; 
-  width: 100%; 
-  height: 14%;
-}
+
   img.resize{
     max-width: 20%;
     max-height: 10%;
