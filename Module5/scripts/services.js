@@ -63,13 +63,7 @@ $(document).ready(function() {
   });
 
   
-  $("#text").datepicker({
-    dateFormat: setDateFormat,
-    minDate: new Date('06/01/2020'),
-    maxDate: '+4M',
-    beforeShowDay: $.datepicker.noWeekends,
-    beforeShowDay: disableDates
-  });
+  
 
  $( function() {
     $( "#datepicker" ).datepicker();
