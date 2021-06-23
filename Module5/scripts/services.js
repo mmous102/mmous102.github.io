@@ -63,7 +63,7 @@ $(document).ready(function() {
   });
 
   
-  $("#dateInput").datepicker({
+  $("#text").datepicker({
     dateFormat: setDateFormat,
     minDate: new Date('06/01/2020'),
     maxDate: '+4M',
@@ -71,7 +71,10 @@ $(document).ready(function() {
     beforeShowDay: disableDates
   });
 
- 
+ $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+
   $("#debit").on("mouseenter", function() {
     $("#debit").addClass("showInput");
   });
