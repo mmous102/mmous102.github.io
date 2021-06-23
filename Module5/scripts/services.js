@@ -67,11 +67,7 @@ $(document).ready(function() {
 
  $( function() {
     $( "#datepicker" ).datepicker();
-    dateFormat: setDateFormat,
-    minDate: new Date('06/01/2020'),
-    maxDate: '+4M',
-    beforeShowDay: $.datepicker.noWeekends,
-    beforeShowDay: disableDates
+   
   } );
 
   $("#debit").on("mouseenter", function() {
