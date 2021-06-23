@@ -1,8 +1,7 @@
 
 function validatePhone(txtPhone) {
   var a = document.getElementById(txtPhone).value;
-  // This filter asks for something like (12345), so parentheses with any number (at least 1)
-  // of digits
+
   var filter = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
   if (filter.test(a)) {
     return true;
@@ -66,10 +65,8 @@ $(document).ready(function() {
   
   $("#dateInput").datepicker({
     dateFormat: setDateFormat,
-    // no calendar before June 1rst 2020
     minDate: new Date('06/01/2020'),
     maxDate: '+4M',
-    // used to disable some dates
     beforeShowDay: $.datepicker.noWeekends,
     beforeShowDay: disableDates
   });
