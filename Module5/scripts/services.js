@@ -54,7 +54,7 @@ $(document).ready(function() {
 
   $("#debit").on("change", function() {
     if (!validateCard("debit")) {
-      alert("Mauvais format de carte de crédit");
+      alert("Wrong credit card format");
       $("#debit").val("xxxxxxxxxxxxxx");
       $("#debit").addClass("error");
     } else {
