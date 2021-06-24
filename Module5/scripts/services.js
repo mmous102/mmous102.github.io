@@ -1,18 +1,13 @@
 
-var unavailableDates = ["06/29/2020", "07/07/2020", "07/10/2020"];
+var unavailableDates = ["06/29/2020","07/07/2020","07/10/2020"];
 const setDateFormat = "mm/dd/yy";
 
 function disableDates(date) {
-  // Sunday is Day 0, disable all Sundays
-  if ((date.getDay() === 1 || date.getDay() === 5) && $("#doctors option:selected").text() === "Peter")
-    return [false];
-
-  else if((date.getDay() === 4 || date.getDay() === 6) && $("#doctors option:selected").text() === "Anna")
-    return [false];
-  else if((date.getDay() === 2 || date.getDay() === 3) && $("#doctors option:selected").text() === "Nguyen")
-    return [false];
-  var string = jQuery.datepicker.formatDate(setDateFormat, date);
-  return [unavailableDates.indexOf(string) === -1];
+    // Sunday is Day 0, disable all Sundays
+    if (date.getDay() === 0)
+        return [false];
+    var string = jQuery.datepicker.formatDate(setDateFormat, date);
+    return [ unavailableDates.indexOf(string) === -1 ]
 }
 
 
