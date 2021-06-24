@@ -1,18 +1,15 @@
 
-
-
-
 var unavailableDates = ["06/29/2020", "07/07/2020", "07/10/2020"];
 const setDateFormat = "mm/dd/yy";
 
 function disableDates(date) {
   // Sunday is Day 0, disable all Sundays
-  if ((date.getDay() === 1 || date.getDay() === 5) && $("#doctors option:selected").text() === "Dr. Peter")
+  if ((date.getDay() === 1 || date.getDay() === 5) && $("#doctors option:selected").text() === "Peter")
     return [false];
 
-  else if((date.getDay() === 4 || date.getDay() === 6) && $("#doctors option:selected").text() === "Dr. Anna")
+  else if((date.getDay() === 4 || date.getDay() === 6) && $("#doctors option:selected").text() === "Anna")
     return [false];
-  else if((date.getDay() === 2 || date.getDay() === 3) && $("#doctors option:selected").text() === "Dr. Nguyen")
+  else if((date.getDay() === 2 || date.getDay() === 3) && $("#doctors option:selected").text() === "Nguyen")
     return [false];
   var string = jQuery.datepicker.formatDate(setDateFormat, date);
   return [unavailableDates.indexOf(string) === -1];
@@ -30,6 +27,8 @@ function validatePhone(txtPhone) {
   }
 }
 
+
+
 function validateCard(cardNum) {
   var a = document.getElementById(cardNum).value;
   var filter = /^[0-9]{14}$/;
@@ -39,6 +38,8 @@ function validateCard(cardNum) {
     return false;
   }
 }
+
+
 $(document).ready(function() {
 
  
@@ -51,6 +52,7 @@ $(document).ready(function() {
       $("#phone").removeClass("error");
     }
   });
+
 
   $("#debit").on("change", function() {
     if (!validateCard("debit")) {
