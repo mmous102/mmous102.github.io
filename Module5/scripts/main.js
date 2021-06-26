@@ -17,7 +17,7 @@ function theFunction() {
   }
   
   alert("Your appointment was taken with " + $("#doctors option:selected").text() +
-  " On " + chosenDay + " at " + hours + ':' + minutes + ' ' + meridian);
+  " on " + chosenDay + " at " + hours + ':' + minutes + ' ' + meridian);
 }
 
 var unavailableDates = ["06/29/2020", "07/07/2020", "07/10/2020"];

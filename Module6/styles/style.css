@@ -1,0 +1,74 @@
+
+
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Gilroy';
+    color: #222222;
+    font-size: x-large;
+    background-color: white ;
+  }
+  
+  h1.a {
+    font-weight: 700;
+    font-size: x-large;
+  }
+a:hover { 
+   background-color: #a9a9a9;
+   border-radius: 3px;
+}
+
+   img.size{
+    height: 30;
+    width: 30;
+   }
+  .light {
+    color: white;
+  }
+  .image{
+    max-width: 13%;
+    padding-top: 25px;
+  }
+  nav{
+  background-color: #d3d3d3;
+  position: absolute; 
+  top: 0.5; 
+  width: 100%; 
+  height: 8%;
+}
+  .hero {
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/physio.jpeg');
+    height: 100vh;
+    color: white;
+    background-position: 50% 50%;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+  }
+  
+  section {
+    padding: 64px 0px;
+  }
+  
+  img {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+#footer{
+  left: 0;
+  position: absolute;
+  bottom: -1220;
+  width: 100%;
+  padding: 10px 10px;
+  background-color: #d3d3d3;
+  color: black;
+  text-align: center;
+}
+  
