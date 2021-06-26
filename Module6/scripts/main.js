@@ -129,4 +129,64 @@ $( "#dateInput" ).datepicker(
       "ui-tooltip": "highlight"
     }
   });
+
+
+  $("#fname").on("mouseenter", function() {
+    $("#fname").addClass("showInput");
+  });
+
+  $("#fname").on("mouseleave", function() {
+    $("#fname").removeClass("showInput");
+  });
+
+  $("#fname").tooltip({
+    classes: {
+      "ui-tooltip": "highlight"
+    }
+  });
+
+
+    $("#lname").on("mouseenter", function() {
+    $("#lname").addClass("showInput");
+  });
+
+  $("#lname").on("mouseleave", function() {
+    $("#lname").removeClass("showInput");
+  });
+
+  $("#lname").tooltip({
+    classes: {
+      "ui-tooltip": "highlight"
+    }
+  });
+
+ $("#email").on("mouseenter", function() {
+    $("#email").addClass("showInput");
+  });
+
+  $("#email").on("mouseleave", function() {
+    $("#email").removeClass("showInput");
+  });
+
+  $("#email").tooltip({
+    classes: {
+      "ui-tooltip": "highlight"
+    }
+  });
+
+$("#phone").on("mouseenter", function() {
+    $("#phone").addClass("showInput");
+  });
+
+  $("#phone").on("mouseleave", function() {
+    $("#phone").removeClass("showInput");
+  });
+
+  $("#phone").tooltip({
+    classes: {
+      "ui-tooltip": "highlight"
+    }
+  });
+
+
 });

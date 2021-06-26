@@ -218,22 +218,22 @@
       <form onsubmit="theFunction()">
         <div class="form-group row">
           <label for="inputname1" class="form-label"> <b>First Name</b></label>
-          <input type="text" class="form-control" id="name" pattern="[a-zA-Z- ]+" title="Your First name is required" placeholder="Please enter your First Name"required>
+          <input type="text" class="form-control" id="fname" pattern="[a-zA-Z- ]+" title="Your First name is required" placeholder="Please enter your First Name"required>
           
         </div>
         <div class="form-group row">
           <label for="inputname2" class="form-label"><b>Last Name</b></label>
-          <input type="text" class="form-control" id="name" pattern="[a-zA-Z- ]+" title="Your Last name is required" placeholder="Please enter your Last Name" required>
+          <input type="text" class="form-control" id="lname" pattern="[a-zA-Z- ]+" title="Your Last name is required" placeholder="Please enter your Last Name" required>
         </div>
 
         <div class="form-group row">
         <label for="inputEmail" class="form-label"><b>Email</b></label>
-        <input type="email" class="form-control" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Votre adresse courriel est requise" placeholder="Please enter your Email" required>
+        <input type="email" class="form-control" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Your email address is required" placeholder="Please enter your Email" required>
         </div>
 
           <div class="form-group row">
           <label for="phone" class="form-label"><b>Number</b></label>
-          <input type="text" class="form-control" id="phone" placeholder="(xxx) xxx-xxxx" title="Your phone number is required" required>
+          <input type="text" class="form-control" id="phone" placeholder="(xxx) xxx-xxxx" title="Your phone number is required (10 digits)" required>
           </div>
 
         <div class="form-group">
@@ -299,7 +299,7 @@
       </div>
       </div>
       <div class="form-group row">
-       <p><b>Credit Card </b><br><input type="text" id="debit" title="Your credit card number is required"></p>
+       <p><b>Credit Card </b><br><input type="text" id="debit" title="Your credit card number is required (16 caracteres)"></p>
       </div>
           <div class="form-label">
             <button type="submit" class="btn btn-primary" onclick="return manageCheckBoxes()" style="background: black; width: 50; border-color: white;">Confirm</button>
