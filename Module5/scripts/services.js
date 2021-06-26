@@ -16,8 +16,8 @@ function theFunction() {
     meridian = 'PM';
   }
   
-  alert("Votre rendez-vous a bel et bien était pris avec " + $("#doctors option:selected").text() +
-  " Le " + chosenDay + " à " + hours + ':' + minutes + ' ' + meridian);
+  alert("Your appointment was taken with " + $("#doctors option:selected").text() +
+  " On " + chosenDay + " at " + hours + ':' + minutes + ' ' + meridian);
 }
 
 var unavailableDates = ["06/29/2020", "07/07/2020", "07/10/2020"];
@@ -63,7 +63,7 @@ function validatePhone(txtPhone) {
 
 function validateCard(cardNum) {
   var a = document.getElementById(cardNum).value;
-  var filter = /^[0-9]{14}$/;
+  var filter = /^[0-9]{16}$/;
   if (filter.test(a)) {
     return true;
   } else {
@@ -93,7 +93,7 @@ $(document).ready(function() {
   $("#debit").on("change", function() {
     if (!validateCard("debit")) {
       alert("Wrong credit card format");
-      $("#debit").val("xxxxxxxxxxxxxx");
+      $("#debit").val("xxxxxxxxxxxxxxxx");
       $("#debit").addClass("error");
     } else {
       $("#debit").removeClass("error");
