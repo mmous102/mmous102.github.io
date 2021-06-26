@@ -217,36 +217,34 @@
       </div>
       <form onsubmit="theFunction()">
         <div class="form-group row">
-          <label for="inputname1" class="col-sm-2 col-form-label">First Name</label>
+          <label for="inputname1" class="form-label"> <b>First Name</b></label>
           <input type="text" class="form-control" id="name" pattern="[a-zA-Z- ]+" title="Your First name is required" placeholder="Please enter your First Name"required>
-          <div class="col-sm-10">
-          </div>
+          
         </div>
         <div class="form-group row">
-          <label for="inputname2" class="col-sm-2 col-form-label">Last Name</label>
+          <label for="inputname2" class="form-label"><b>Last Name</b></label>
           <input type="text" class="form-control" id="name" pattern="[a-zA-Z- ]+" title="Your Last name is required" placeholder="Please enter your Last Name" required>
-          <div class="col-sm-10">
-          </div>
         </div>
+
         <div class="form-group row">
-            <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-            <input type="email" class="form-control" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Votre adresse courriel est requise" placeholder="Please enter your Email" required>
-            <div class="col-sm-10">
-            </div>
-          </div>
-          <div class="form-group row">
-          <div class="col-sm-10">
-              <label for="phone" class="form-label">Number</label>
-              <input type="text" class="form-control" id="phone" placeholder="(xxx) xxx-xxxx" title="Your phone number is required" required>
-            </div>
+        <label for="inputEmail" class="form-label"><b>Email</b></label>
+        <input type="email" class="form-control" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Votre adresse courriel est requise" placeholder="Please enter your Email" required>
         </div>
-        <label for="services" class="form-label">Services:</label>
-        <div class="form-check">
+
+          <div class="form-group row">
+          <label for="phone" class="form-label"><b>Number</b></label>
+          <input type="text" class="form-control" id="phone" placeholder="(xxx) xxx-xxxx" title="Your phone number is required" required>
+          </div>
+
+        <div class="form-group">
+        <label for="services" class="form-label"> <b>Services </b></label>
+                <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="dentisterie" name="service[]" id="flexCheckChecked">
                 <label class="form-check-label" for="flexCheckChecked">
                   Physiotherapy ($100)
                 </label>
               </div>
+
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="vaccination" name="service[]" id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
@@ -277,9 +275,9 @@
                   Kinesiology($115)
                 </label>
               </div>
-        
+        <br>
         <div class="form-group row">
-          <label for="doctors" class="col-sm-2 col-form-label">Doctor Preference</label>
+          <label for="doctors" class="form-label"><b>Doctor Preference</b></label>
           <div class="col-sm-10">
             <select name="doctors" class="custom-select my-1 mr-sm-2" id="doctors">
               <option selected>None</option>
@@ -291,18 +289,19 @@
         </div>
  
        <div class="form-group row">
-          <div class="col-sm-10"> 
-          <p>Choose a date: <input type="text" id="dateInput" placeholder="dd/mm/yyyy"></p>
+          <div class="form-label"> 
+          <p><b>Choose a date </b> <br><input type="text" id="dateInput" placeholder="dd/mm/yyyy"></p>
        </div>
        </div>
        <div class="form-group row">
-          <div class="col-sm-10">
-          <p>Choose a time:<input type="time" id="timeInput"placeholder="--:-- --"></p>
+          <div class="form-label">
+          <p><b>Choose a time</b><br><input type="time" id="timeInput"placeholder="--:-- --"></p>
       </div>
       </div>
-       <p>Credit Card: <input type="text" id="debit" title="Your credit card number is required"></p>
-        <div class="form-group row">
-          <div class="col-sm-10">
+      <div class="form-group row">
+       <p><b>Credit Card </b><br><input type="text" id="debit" title="Your credit card number is required"></p>
+      </div>
+          <div class="form-label">
             <button type="submit" class="btn btn-primary" onclick="return manageCheckBoxes()" style="background: black; width: 50; border-color: white;">Confirm</button>
 
           </div>
