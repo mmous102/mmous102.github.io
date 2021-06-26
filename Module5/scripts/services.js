@@ -1,3 +1,25 @@
+function theFunction() {
+  var chosenDay = document.getElementById("dateInput").value;
+  var chosenTime = document.getElementById("timeInput").value.split(':'),
+    hours, minutes, meridian;
+  hours = chosenTime[0];
+  minutes = chosenTime[1];
+  if (hours > 12) {
+    meridian = 'PM';
+    hours -= 12;
+  } else if (hours < 12) {
+    meridian = 'AM';
+    if (hours == 0) {
+      hours = 12;
+    }
+  } else {
+    meridian = 'PM';
+  }
+  
+  alert("Votre rendez-vous a bel et bien était pris avec " + $("#doctors option:selected").text() +
+  " Le " + chosenDay + " à " + hours + ':' + minutes + ' ' + meridian);
+}
+
 var unavailableDates = ["06/29/2020", "07/07/2020", "07/10/2020"];
 const setDateFormat = "mm/dd/yy";
 

@@ -220,44 +220,66 @@
       <form>
         <div class="form-group row">
           <label for="inputname1" class="col-sm-2 col-form-label">First Name</label>
+          <input type="text" class="form-control" id="name" pattern="[a-zA-Z- ]+" title="Your First name is required" placeholder="Please enter your First Name"required>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputEmail3" placeholder="Please enter your First Name">
           </div>
         </div>
         <div class="form-group row">
           <label for="inputname2" class="col-sm-2 col-form-label">Last Name</label>
+          <input type="text" class="form-control" id="name" pattern="[a-zA-Z- ]+" title="Your Last name is required" placeholder="Please enter your Last Name" required>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputEmail3" placeholder="Please enter your Last Name">
           </div>
         </div>
         <div class="form-group row">
             <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+            <input type="email" class="form-control" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Votre adresse courriel est requise" placeholder="Please enter your Email" required>
             <div class="col-sm-10">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="Please enter your Email">
             </div>
           </div>
           <div class="form-group row">
           <div class="col-sm-10">
               <label for="phone" class="form-label">Number</label>
-              <input type="text" class="form-control" id="phone" placeholder="(xxx)xxx-xxxx">
+              <input type="text" class="form-control" id="phone" placeholder="(xxx) xxx-xxxx" title="Your phone number is required" required>
             </div>
         </div>
-        <fieldset class="form-group">
-          <div class="form-group row">
-          <label for="inputEmail3" class="col-sm-2 col-form-label">Services</label>
-          <div class="col-sm-10">
-            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-              <option selected>None</option>
-              <option value="1">Physiotherapy ($100)</option>
-              <option value="2">Acupuncture ($75)</option>
-              <option value="3"> Massage ($90)</option>
-              <option value="4"> Osteopathy ($170)</option>
-              <option value="5"> Occupational Therapy ($165)</option>
-              <option value="6"> Kinesiology($115)</option>
-            </select>
-          </div>
-        </div>
-        </fieldset>
+        <label for="services" class="form-label">Services:</label>
+        <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="dentisterie" name="service[]" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Physiotherapy ($100)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="vaccination" name="service[]" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Acupuncture ($75)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="consultation" name="service[]" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Massage ($90)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="nutrition" name="service[]" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Osteopathy ($170)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="consultation" name="service[]" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Occupational Therapy ($165)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="consultation" name="service[]" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Kinesiology($115)
+                </label>
+              </div>
+        
         <div class="form-group row">
           <label for="doctors" class="col-sm-2 col-form-label">Doctor Preference</label>
           <div class="col-sm-10">
