@@ -61,6 +61,16 @@ a:hover {
     width: 100%;
   }
 
+  input[type='checkbox'] {
+    
+    width:30px;
+    height:25px;
+    background:white;
+    border-radius:3px;
+    border:2px solid #555;
+   
+}
+
 #footer{
   left: 0;
   position: absolute;
