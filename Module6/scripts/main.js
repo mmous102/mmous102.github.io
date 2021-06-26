@@ -1,23 +1,22 @@
-function theFunction() {
-  var chosenDay = document.getElementById("dateInput").value;
-  var chosenTime = document.getElementById("timeInput").value.split(':'),
-    hours, minutes, meridian;
-  hours = chosenTime[0];
-  minutes = chosenTime[1];
+function confirmBook() {
+  var jour = document.getElementById("dateInput").value;
+  var temps = document.getElementById("timeInput").value.split(':'),hours, minutes, midi;
+  hours = temps[0];
+  minutes = temps[1];
   if (hours > 12) {
-    meridian = 'PM';
+    midi = 'PM';
     hours -= 12;
   } else if (hours < 12) {
-    meridian = 'AM';
+    midi = 'AM';
     if (hours == 0) {
       hours = 12;
     }
   } else {
-    meridian = 'PM';
+    midi = 'PM';
   }
   
   alert("Your appointment was taken with " + $("#doctors option:selected").text() +
-  " on " + chosenDay + " at " + hours + ':' + minutes + ' ' + meridian);
+  " on " + jour + " at " + hours + ':' + minutes + ' ' + midi);
 }
 
 var unavailableDates = ["06/29/2020", "07/07/2020", "07/10/2020"];
@@ -35,7 +34,7 @@ function disableDates(date) {
   return [unavailableDates.indexOf(string) === -1];
 }
 
-function manageCheckBoxes() {
+function servicesSelect() {
   var form_data = new FormData(document.querySelector("form"));
 
   if (!form_data.has("service[]")) {
