@@ -35,6 +35,18 @@ function disableDates(date) {
   return [unavailableDates.indexOf(string) === -1];
 }
 
+function manageCheckBoxes() {
+  var form_data = new FormData(document.querySelector("form"));
+
+  if (!form_data.has("service[]")) {
+    document.getElementById("option_not_selected").style.visibility = "visible";
+    return false;
+  } else {
+    document.getElementById("option_not_selected").style.visibility = "hidden";
+    return true;
+  }
+
+}
 
 function validatePhone(txtPhone) {
   var a = document.getElementById(txtPhone).value;
